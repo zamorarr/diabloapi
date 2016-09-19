@@ -9,7 +9,7 @@ data_resources_api <- function(subpath) {
 #' @param follower The data about a follower
 #' @param artistan The data about an artisan
 #'
-#' @details The Character Profile API is the primary way to access character information.
+#' @details The Data Resources API is the primary way to access character information.
 #' \describe{
 #'  \item{item}{Returns data for a profile item}
 #'  \item{follower}{Returns data for a follower}
@@ -18,7 +18,7 @@ data_resources_api <- function(subpath) {
 #'
 #' @export
 #' @source https://dev.battle.net/io-docs
-item <- function(data) profile_api(c("item", data))
+item <- function(data) data_resources_api(c("item", data))
 
 #' @export
 #' @rdname item
