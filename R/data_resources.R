@@ -5,11 +5,12 @@ data_resources_api <- function(subpath) {
 
 #' @title  Data Resources API
 #'
+#' @description The Data Resources API is the primary way to access character information.
 #' @param data The item data string (from a profile) containing the item to lookup
 #' @param follower The data about a follower
-#' @param artistan The data about an artisan
+#' @param artisan The data about an artisan
 #'
-#' @details The Data Resources API is the primary way to access character information.
+#' @details
 #' \describe{
 #'  \item{item}{Returns data for a profile item}
 #'  \item{follower}{Returns data for a follower}

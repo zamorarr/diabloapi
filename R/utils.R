@@ -1,4 +1,4 @@
-ua <- httr::user_agent("https://gitlab.com/zamorarr/diabloapi")
+ua <- httr::user_agent("https://github.com/zamorarr/diabloapi")
 baseurl <- "https://us.api.battle.net"
 
 blizzard_pat <- function() {
@@ -46,7 +46,7 @@ diablo_api <- function(path, query = NULL) {
   structure(
     list(
       content = parsed,
-      path = httr::modify_url(baseurl, path = path),
+      path = httr::modify_url(baseurl, path = path, query = query),
       response = resp
     ),
     class = "diablo_api"
@@ -57,6 +57,6 @@ diablo_api <- function(path, query = NULL) {
 #' @export
 print.diablo_api <- function(x, ...) {
   cat("<Diablo ", x$path, ">\n", sep = "")
-  str(x$content, 1L)
+  utils::str(x$content, 1L)
   invisible(x)
 }

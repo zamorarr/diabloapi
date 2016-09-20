@@ -17,8 +17,10 @@ hero_profile(battletag, id)
 
 \item{id}{The hero id of the hero to look up}
 }
-\details{
+\description{
 The Character Profile API is the primary way to access character information.
+}
+\details{
 \describe{
  \item{career_profile}{Returns the career profile of a Battle Tag}
  \item{hero_profile}{Returns the hero profile of a Battle Tag's hero}

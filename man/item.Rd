@@ -20,10 +20,12 @@ artisan(artisan = c("blacksmith", "jeweler", "mystic"))
 
 \item{follower}{The data about a follower}
 
-\item{artistan}{The data about an artisan}
+\item{artisan}{The data about an artisan}
+}
+\description{
+The Data Resources API is the primary way to access character information.
 }
 \details{
-The Data Resources API is the primary way to access character information.
 \describe{
  \item{item}{Returns data for a profile item}
  \item{follower}{Returns data for a follower}
