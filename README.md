@@ -1,4 +1,5 @@
 # Diablo API
+[![Build Status](https://travis-ci.org/zamorarr/diabloapi.svg?branch=master)](https://travis-ci.org/zamorarr/diabloapi)
 
 1. Create a free developer account at [dev.battle.net](https://dev.battle.net/)
 
